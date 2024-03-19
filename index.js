@@ -4,7 +4,9 @@ const cors = require('cors')
 require('dotenv').config()
 const mongoose = require('mongoose');
 const {ObjectId} = mongoose.Types;
+
 const uri = process.env.DB_URI;
+
 const {Users} = require('./models/models.js');
 const {Exercises} = require('./models/models.js');
 console.log(Users);
