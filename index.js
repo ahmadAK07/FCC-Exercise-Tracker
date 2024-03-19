@@ -4,7 +4,7 @@ const cors = require('cors')
 require('dotenv').config()
 const mongoose = require('mongoose');
 const {ObjectId} = mongoose.Types;
-const uri = "mongodb+srv://muhammadahmadamin512:NuqwfSrPDp44iDUf@book-store-mern.kgjgihs.mongodb.net/?retryWrites=true&w=majority&appName=Book-Store-MERN"
+const uri = process.env.DB_URI // create .env file and variable DB_URI will contain your mongodb clustor link
 const {Users} = require('./models/models.js');
 const {Exercises} = require('./models/models.js');
 console.log(Users);
